@@ -23,6 +23,8 @@ def predict():
 
     # Make prediction
     prediction = model.predict(data)[0]
+
+    # Interpret Prediction
     if prediction == 1:
         return "Survived"
     else:
